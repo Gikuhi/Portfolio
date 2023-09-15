@@ -3,10 +3,12 @@ import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { Bars3Icon, BellIcon, XMarkIcon } from '@heroicons/react/24/outline'
 import { NavLink } from "react-router-dom";
 
+
 const navigation = [
   { name: 'Home', href: '/'},
   { name: 'About', href: '/about' },
   { name: 'Services', href: '/services' },
+  { name: 'Portfolio', href: '/portfolio' },
 ]
 
 function classNames(...classes) {
@@ -19,7 +21,7 @@ export default function Header(props) {
     <Disclosure as="nav" className="bg-gray-800">
       {({ open }) => (
         <>
-          <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 header">
             <div className="relative flex h-16 items-center justify-between">
               <div className="absolute inset-y-0 left-0 flex items-center sm:hidden">
                 {/* Mobile menu button*/}
@@ -38,7 +40,7 @@ export default function Header(props) {
                   <img
                     className="h-8 w-auto"
                     src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-                    alt="Your Company"
+                    alt="Arttherapy"
                   />
                 </div>
                   <div className="hidden sm:ml-6 sm:block">

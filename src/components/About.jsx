@@ -1,3 +1,4 @@
+
 export default function About () {
     return (
         <>
@@ -10,7 +11,7 @@ export default function About () {
 
             </div>
 
-            <div className="nine columns main-col">
+            <div id="about" className="nine columns main-col">
             <blockquote className="text-center text-xl font-semibold leading-8 text-gray-900 sm:text-2xl sm:leading-9">
                 <h2 >About Me</h2>
                 <br></br>
@@ -159,10 +160,14 @@ export default function About () {
                   +254 717 577 640
                 </p>
               </div>
+
             </div>
           </div>
+
         </div>
+
       </div>
+
     </div>
   </section>
 </div>
